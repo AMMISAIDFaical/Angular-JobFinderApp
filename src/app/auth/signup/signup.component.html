@@ -1,0 +1,31 @@
+<section class="view intro-2 " style="width: 100%;margin: 0px; padding: 0px;">
+  <div class="full-bg-img">
+    <div class="row" style="margin-left: 80px;margin-top: 0px;">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2 style="margin-left: 500px; margin-top: 150px; color: whitesmoke;">Create a Account</h2>
+        <div   style="margin-left: 500px">
+          <input type="checkbox" (change)="checkValueemployee()" />
+          <label style="padding: 10px; color: whitesmoke;" for="employee">Employee</label>
+          <input type="checkbox" (change)="checkValuecompany()" />
+          <label style="padding: 10px; color: whitesmoke;" for="company">Company</label>
+        </div>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="email" style="margin-left: 500px; color: whitesmoke;">Email Adress</label>
+            <input type="text" id="email" class="form-control" formControlName="email"
+              style="width: 400px; margin-left: 500px;height: 30px">
+          </div>
+          <div class="form-group">
+            <label for="password" style="margin-left: 500px; color: whitesmoke;">Your password</label>
+            <input type="password" id="password" class="form-control" formControlName="password"
+              style="width: 400px; margin-left: 500px;height: 30px">
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="signUpForm.invalid"
+            style="margin-left: 500px;">Create
+            my Account</button>
+        </form>
+        <p class="text-danger">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+</section>

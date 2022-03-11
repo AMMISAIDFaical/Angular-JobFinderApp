@@ -1,0 +1,102 @@
+<div  [style.backgroundImage]="'url('+ imagSource +')'" class="container">
+  <div style="margin-top: 30px; margin-right: 0px;" class="registration-form">
+    <h2>Save Cv </h2>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSaveEmployeeCV()">
+      <div class="card" style="width: 800px;">
+        <div style="width: 700px;margin-left: 20px;" class="form-group">
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" class="form-control" placeholder="first name and last name"
+            formControlName="fullName">
+        </div>
+
+        <div style="width: 700px;margin-left: 20px;" class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" class="form-control" placeholder="Email" formControlName="email">
+        </div>
+
+
+        <div style="width: 100px;margin-left: 20px;" class="form-group">
+          <label for="gener">Gener</label>
+          <input type="text" id="gener" class="form-control" placeholder="Gener" formControlName="gener">
+        </div>
+
+      </div>
+
+        <img style="margin-left: 850px;width: 300px; margin-top: -350px;height: 260px;" src="assets/images/profile_pic.jpg" alt="Search">
+
+      <div class="card" style="width: 600px; margin-top: 10px;">
+
+        <div style="width: 500px; margin-left: 20px;" class="form-group">
+          <label for="adress">Adress</label>
+          <input type="text" id="adress" class="form-control" placeholder="Adress" formControlName="adress">
+        </div>
+
+        <div style="width: 500px;margin-left: 20px;" class="form-group">
+          <label for="wilaya">Wilaya</label>
+          <input type="text" id="wilaya" class="form-control" formControlName="wilaya" placeholder="Wilaya">
+        </div>
+
+        <div style="width: 500px;margin-left: 20px;" class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" class="form-control" formControlName="city" placeholder="City">
+        </div>
+
+        <div style="width: 500px;margin-left: 20px;" class="form-group">
+          <label for="job">Job</label>
+          <input type="text" id="job" class="form-control" formControlName="job" placeholder="Job">
+        </div>
+
+        <div style="width: 500px;margin-left: 20px;" class="form-group">
+          <label for="age">Age</label>
+          <input type="text" id="age" class="form-control" formControlName="age" placeholder="Age">
+        </div>
+
+        <div style="width: 500px;margin-left: 20px;" class="form-group">
+          <label for="Phone">Phone Number</label>
+          <input type="text" id="Phone" class="form-control" formControlName="phone" placeholder="Phone Number">
+        </div>
+
+      </div>
+
+
+      <div class="card" style="width: 500px; margin-top:-585px; margin-left: 650px;">
+
+        <div style="width: 400px;margin-left: 20px;" class="form-group">
+          <label for="degree">degree</label>
+          <input type="text" id="degree" class="form-control" formControlName="degree" placeholder="Degree">
+        </div>
+
+        <div style="width: 400px;margin-left: 20px;" class="form-group">
+          <label for="school">school</label>
+          <input type="text" id="author" class="form-control" formControlName="school" placeholder="School or University">
+        </div>
+
+        <div style="width: 400px;margin-left: 20px;" class="form-group">
+          <label for="expWilaya">Worked in Wilaya</label>
+          <input type="text" id="expWilaya" class="form-control" formControlName="expWilaya" placeholder="Wilaya used to work in">
+        </div>
+      </div>
+
+      <div class="card" style="width: 500px; margin-top: 20px;  margin-left: 650px; padding-top: 30px; ">
+        <div style="width: 400px;margin-left: 20px;" class="form-group">
+          <label for="expCity">Worked in City</label>
+          <input type="text" id="expCity" class="form-control" formControlName="expCity" placeholder="City used to work in">
+        </div>
+
+        <div style="width: 400px;margin-left: 20px;" class="form-group">
+          <label for="expCity">Company's Name used Working at </label>
+          <input type="text" id="expCity" class="form-control" formControlName="expCompany" placeholder="Company used to work in">
+        </div>
+      </div>
+
+      <div class="card" style=" margin-top: 90px;">
+
+        <button class="btn btn-success" [disabled]="employeeForm.invalid" type="submit">save My CV </button>
+        <button  mat-stroked-button color="primary" (click)="gotoCompanies()">
+          See
+          Companies </button>
+      </div>
+
+    </form>
+  </div>
+</div>

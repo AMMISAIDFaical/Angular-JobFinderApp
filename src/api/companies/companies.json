@@ -1,0 +1,92 @@
+[
+  {
+    "companyName": "Microsoft",
+    "visitAdr": "rue 12",
+    "email": "Microsoft@gmail.com",
+    "phoneNum": "069989893",
+    "faxNum": "0024",
+    "dirName": "ali",
+    "location": "alger",
+    "job": "devloppeur"
+  },
+  {
+    "companyName": "Builder org",
+    "visitAdr": "rue 11",
+    "email": "Builder-org@gmail.com",
+    "phoneNum": "079896563",
+    "faxNum": "0424",
+    "dirName": "ali",
+    "location": "oran",
+    "job": "building"
+  },
+  {
+    "companyName": "Mall-ahmed",
+    "visitAdr": "rue 13",
+    "email": "Mall-2021@gmail.com",
+    "phoneNum": "06552856",
+    "faxNum": "0224",
+    "dirName": "ahmed",
+    "location": "oran",
+    "job": "reception"
+  },
+  {
+    "companyName": "langSchool",
+    "visitAdr": "rue 24",
+    "email": "LS@gmail.com",
+    "phoneNum": "0853636",
+    "faxNum": "0999",
+    "dirName": "sami",
+    "location": "waragla",
+    "job": "teacher"
+  },
+  {
+    "companyName": "transport Serve",
+    "visitAdr": "rue 19",
+    "email": "TS@gmail.com",
+    "phoneNum": "074245536",
+    "faxNum": "0997",
+    "dirName": "said",
+    "location": "chlef",
+    "job": "chauffeur"
+  },
+  {
+    "companyName": "resturant 5 star",
+    "visitAdr": "rue 114",
+    "email": "5-STARS@gmail.com",
+    "phoneNum": "07885536",
+    "faxNum": "9985",
+    "dirName": "Salim",
+    "location": "constantine",
+    "job": "chef"
+  },
+  {
+    "companyName": "libray",
+    "visitAdr": "rue 114",
+    "email": "10-LIB@gmail.com",
+    "phoneNum": "078812346",
+    "faxNum": "9005",
+    "dirName": "samir",
+    "location": "alger",
+    "job": "reception"
+  },
+  {
+    "companyName": "hotel",
+    "visitAdr": "rue 123",
+    "email": "5-HOTEL@gmail.com",
+    "phoneNum": "07884446",
+    "faxNum": "1122",
+    "dirName": "rayan",
+    "location": "ghardaia",
+    "job": "agent"
+  },
+  {
+    "companyName": "electronics ART",
+    "visitAdr": "rue 24",
+    "email": "ELEC7@gmail.com",
+    "phoneNum": "05093536",
+    "faxNum": "1915",
+    "dirName": "brahim",
+    "location": "ghardaia",
+    "job": "reparateur"
+  }
+]

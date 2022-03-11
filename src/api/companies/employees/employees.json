@@ -1,0 +1,59 @@
+{
+  "people": [
+    {
+      "FirstName": "ali",
+      "LastName": "ammisaid",
+      "Email": "MA@gmail.com",
+      "phoneNumber": "123345678",
+      "Wilaya": "ghardaia",
+      "City": "berrraine",
+      "Adress": "sidsmahi",
+      "Job": "chef entreprise",
+      "Age": "28"
+    },
+    {
+      "FirstName": "faiçal",
+      "LastName": "ammisaid",
+      "Email": "FA@gmail.com",
+      "phoneNumber": "123323458",
+      "Wilaya": "ghardaia",
+      "City": "berrraine",
+      "Adress": "sidsmahi",
+      "Job": "developpeur",
+      "Age": "20"
+    },
+    {
+      "FirstName": "said",
+      "LastName": "Ali",
+      "Email": "SA@gmail.com",
+      "phoneNumber": "09845678",
+      "Wilaya": "oran",
+      "City": "oran-centre",
+      "Adress": "rue 21",
+      "Job": "chef incepection",
+      "Age": "27"
+    },
+    {
+      "FirstName": "hamza",
+      "LastName": "lotfi",
+      "Email": "hl@gmail.com",
+      "phoneNumber": "098344458",
+      "Wilaya": "telemcen",
+      "City": "telemcen-centre",
+      "Adress": "rue 29",
+      "Job": "ensiegnant",
+      "Age": "34"
+    },
+    {
+      "FirstName": "mehamed",
+      "LastName": "khalil",
+      "Email": "MK@gmail.com",
+      "phoneNumber": "036525656",
+      "Wilaya": "annaba",
+      "City": "annaba-centre",
+      "Adress": "rue 11",
+      "Job": "builder",
+      "Age": "29"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+ <div [style.backgroundImage]="'url('+ imagSource +')' " >
+  <div class="container">
+    <img [src]="myimage" style="height: 350px;width: 90%;">
+    <div class="centered">
+      <h1 style="font-size: 400%;color: '#40514e'"> Search Find Work</h1>
+    </div>
+  </div>
+  <div style="margin-top: -30px;" class="position-absolute top-50 start-50 translate-middle">
+    <div class="container">
+      <div class="d-flex flex-row">
+
+        <div class="col-sm">
+          <form>
+
+            <div style="width: 100%; display: table; margin-left:25%;">
+              <div style="display: table-row">
+
+                <mat-form-field style="margin:110px 0 250px 200px; width: 350px ;" class="example-form-field">
+                  <mat-label>Job</mat-label>
+                  <input style="color: rgb(4, 107, 107);height: 25px;" matInput type="search" id="Offredjob"
+                    [(ngModel)]="job" [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+
+                <mat-form-field style="margin-left:50px; width:350px;" class="example-form-field">
+                  <mat-label>Wilaya</mat-label>
+                  <input style="color: rgb(4, 107, 107);height: 25px;" matInput type="search" id="wilaya"
+                    [(ngModel)]="wilaya" [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+                <div style="margin-top:-300px; margin-left: -800px;">
+                  <button mat-flat-button color="primary" (click)="onSearch()">
+                    search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin: 200px 0px 0px 80px;">
+    <div style="margin: 120px 0px 0px 0px ;   ;border-radius: 0px;" class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img style="width: 100px; height: 100px; margin-left: 0px ;" src="assets/images/search.png" alt="Search">
+        </div>
+        <div class="col-sm">
+          <img style="width: 100px; height: 100px ; margin-left: 370px ; " src="assets/images/hired.png" alt="Hiring">
+        </div>
+        <div class="col-sm">
+          <img style="width: 100px; height: 100px; margin-right:  -550px ;" src="assets/images/suitcase.png" alt="job">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; margin-left: 250px;" class="container">
+
+    <div class="row">
+      <div class="col" *ngFor="let company of filtredCompanies">
+
+        <mat-card class="example-card" style="max-width: 400px;">
+          <mat-card-header>
+            <mat-card-title style="color: rgba(0, 253, 34, 0.795)">Company's name : {{company.companyName}}
+            </mat-card-title>
+            <mat-card-subtitle style="color:rgb(0, 0, 0);">Company's phone number : {{company.phoneNumber }}
+            </mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              <mat-list role="list">
+                <mat-list-item role="listitem">City : {{company.city }}</mat-list-item>
+                <mat-list-item role="listitem">Wilaya : {{company.wilaya }}</mat-list-item>
+                <mat-list-item role="listitem">The Offred job : {{company.Offredjob }}</mat-list-item>
+                <mat-list-item role="listitem">Email: {{company.companyMail }}</mat-list-item>
+                <mat-list-item role="listitem">Company's Adress : {{company.companyAdr }}</mat-list-item>
+              </mat-list>
+            </p>
+          </mat-card-content>
+
+          <mat-card-actions>
+            <button mat-stroked-button color="primary">See more about {{company.companyName}} </button>
+          </mat-card-actions>
+
+        </mat-card>
+
+
+      </div>
+    </div>
+    <div *ngIf="show===true" class="row">
+      <div class="col" *ngFor="let company of companies">
+
+        <mat-card class="example-card" style="  width: 500px;margin-top: 40px;color:rgb(15, 34, 199) ;">
+          <mat-card-header>
+            <mat-card-title>Company's name : {{company.companyName}}</mat-card-title>
+            <mat-card-subtitle>Company's phone number : {{company.phoneNumber }}</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              <mat-list role="list">
+                <mat-list-item role="listitem">City : {{company.city }}</mat-list-item>
+                <mat-list-item role="listitem">Wilaya : {{company.wilaya }}</mat-list-item>
+                <mat-list-item role="listitem">The Offred job : {{company.Offredjob }}</mat-list-item>
+                <mat-list-item role="listitem">Company's Email : {{company.companyMail }}</mat-list-item>
+                <mat-list-item role="listitem">Company's Adress : {{company.companyAdr }}</mat-list-item>
+              </mat-list>
+            </p>
+          </mat-card-content>
+
+
+        </mat-card>
+
+      </div>
+    </div>
+
+    <footer style="padding-top: 5%;">
+
+    </footer>
+
+  </div>
+</div>
+ 

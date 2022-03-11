@@ -1,0 +1,62 @@
+
+<div [style.backgroundImage]="'url('+ imagSource +')'" class="container">
+  <div style="width: 550px; margin-top: 30px;" class="registration-form">
+    <h1>fill the form below with your company informations </h1>
+    <form  [formGroup]="companyForm" (ngSubmit)="onSaveCompany()" >
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="companyName" placeholder="Name of the company" formControlName= "companyName" >
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control " id="companyAdr"placeholder="visiting adress" formControlName ="companyAdr">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="companyMail" placeholder="Email" formControlName="companyMail" >
+      </div>
+
+      <div class="form-group">
+        <input type="number" class="form-control item" id="phoneNumber"placeholder="Phone Number" formControlName="phoneNumber">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="wilaya" placeholder="Wilaya" formControlName="wilaya" >
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="city" placeholder="City" formControlName="city" >
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="Offredjob" placeholder="job Offred" formControlName="Offredjob" >
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="gender" placeholder="gender(M/F)" formControlName="gender" >
+      </div>
+
+
+      <button class="btn btn-success" [disabled]="companyForm.invalid" type="submit">save
+      </button>
+      <button style="padding: 5px;margin-left: 30px;" mat-stroked-button color="primary" (click)="gotoEmployees()" > See Employees  </button>
+    </form>
+
+    <form style="position: absolute;left: 900px; top: 130px;" class="md-form">
+      <div class="file-field">
+        <div class="mb-4">
+          <img style="height: 250px;" src="assets/images/companyimages.jpg"
+            class="rounded-circle z-depth-1-half avatar-pic" alt="example placeholder avatar">
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="btn btn-mdb-color btn-rounded float-left">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">choose pictures</label>
+            </div>
+            <h4 style="margin-top: 50px;">Add Photos here if You want sir </h4>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

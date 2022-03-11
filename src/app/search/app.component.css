@@ -1,0 +1,72 @@
+.algerieCarte {
+  width: 300px ;
+  position: relative ;
+}
+.algerieCarte img {
+
+  width: 100% ;
+
+
+}
+
+
+.wilGroup1 {
+
+  position: absolute ;
+  right: 0px ;
+  top: 0px ;
+}
+.wilGroup2 {
+
+  position: absolute ;
+  right: 0px ;
+  top: 0px ;
+}
+
+.wilGroup3 {
+
+  position: absolute ;
+right: 0px ;
+  top: 0px ;
+}
+
+.wilGroup4 {
+
+  position: absolute ;
+  right: 0px ;
+  top: 0px ;
+}
+
+.wilGroup5 {
+
+  position: absolute ;
+right: 0px ;
+  top: 0px ;
+}
+
+.wilGroup6 {
+
+  position: absolute ;
+  right: 0px ;
+  top: 0px ;
+}
+  .wilGroup7 {
+
+  position: absolute ;
+  right: 0px ;
+  top: 0px ;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

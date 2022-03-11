@@ -1,0 +1,26 @@
+input
+{
+  background-color:aliceblue;
+}
+body{
+  background-color: #525252;
+}
+.centered-form{
+margin-top: 60px;
+}
+
+.centered-form .panel{
+background: rgba(255, 255, 255, 0.8);
+box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+#profile-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
